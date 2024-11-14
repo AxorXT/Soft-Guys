@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2756138121486981126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2377863557108311605}
+  - component: {fileID: 6739149128029655859}
+  - component: {fileID: 8522206605217111346}
+  m_Layer: 0
+  m_Name: Menus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2377863557108311605
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2756138121486981126}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.71843994, z: -0, w: 0.695589}
+  m_LocalPosition: {x: 935.19, y: 201.21, z: 1292.18}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 91.852, z: 0}
+--- !u!114 &6739149128029655859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2756138121486981126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98119079c9bce8844a4fd151520559c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerObject: {fileID: 0}
+  playerStartPosition: {fileID: 0}
+  levelCompletedMenu: {fileID: 0}
+  levelFailedMenu: {fileID: 0}
+  playerTime: {fileID: 0}
+  killplayer: {fileID: 0}
+  levelCompleteTimeText: {fileID: 0}
+--- !u!114 &8522206605217111346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2756138121486981126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eca09b9be6951fe4bb6d5f121240b694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelCompleteTimeText: {fileID: 0}
+  playerTime: {fileID: 0}
+  levelCompletedMenu: {fileID: 0}
+  levelFailedMenu: {fileID: 0}
+  player: {fileID: 0}
+  playerController: {fileID: 0}

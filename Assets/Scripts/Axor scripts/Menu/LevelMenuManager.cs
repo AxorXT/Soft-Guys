@@ -93,15 +93,13 @@ public class LevelMenuManager : MonoBehaviour
         // Recargar la escena actual para que el jugador comience desde el inicio
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
-        // Opcional: Ocultar el puntero después de seleccionar la opción
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        
     }
 
     // Volver al menú principal
     public void BackToMainMenu()
     {
-        SceneManager.LoadScene("MainMenu"); // Asume que la escena principal se llama "MainMenu"
+        SceneManager.LoadScene("Menu"); // Asume que la escena principal se llama "MainMenu"
 
         // Ocultar el puntero después de seleccionar la opción
         Cursor.visible = false;  // Hacer invisible el puntero
