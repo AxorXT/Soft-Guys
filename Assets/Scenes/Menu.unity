@@ -270,8 +270,6 @@ GameObject:
   - component: {fileID: 55226640}
   - component: {fileID: 55226644}
   - component: {fileID: 55226645}
-  - component: {fileID: 55226646}
-  - component: {fileID: 55226647}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -387,35 +385,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89969e39c0fc927429925a366463fd23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &55226646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 55226639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0d9e8bf1cca7b74d9b2a597ba49e1e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panel1: {fileID: 819435494}
-  panel2: {fileID: 1387686576}
---- !u!114 &55226647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 55226639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8938efd6da8141647aa6cd5146cfa223, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetSceneName: 
-  panelToDisable: {fileID: 819435494}
-  panelToEnable: {fileID: 1387686576}
 --- !u!1 &79659048
 GameObject:
   m_ObjectHideFlags: 0
@@ -1514,7 +1483,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36.15
+  m_fontSize: 18
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1577,6 +1546,7 @@ GameObject:
   - component: {fileID: 367810105}
   - component: {fileID: 367810104}
   - component: {fileID: 367810103}
+  - component: {fileID: 367810108}
   m_Layer: 0
   m_Name: Ocean
   m_TagString: Untagged
@@ -1690,6 +1660,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &367810108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367810102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0d9e8bf1cca7b74d9b2a597ba49e1e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel1: {fileID: 819435494}
+  panel2: {fileID: 1387686576}
 --- !u!1 &560530590
 GameObject:
   m_ObjectHideFlags: 0
@@ -3368,7 +3352,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38.2
+  m_fontSize: 18
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3797,7 +3781,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.45
+  m_fontSize: 18
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4331,7 +4315,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 55226646}
+      - m_Target: {fileID: 367810108}
         m_TargetAssemblyTypeName: CambiarPanel, Assembly-CSharp
         m_MethodName: SwitchPanels
         m_Mode: 1
@@ -4465,7 +4449,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38.2
+  m_fontSize: 18
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1

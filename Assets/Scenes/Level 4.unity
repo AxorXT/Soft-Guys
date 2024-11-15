@@ -593,16 +593,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: LevelMenuManager, Assembly-CSharp
-        m_MethodName: BackToMainMenu
-        m_Mode: 1
+      - m_Target: {fileID: 939828138}
+        m_TargetAssemblyTypeName: MenuGameOver, Assembly-CSharp
+        m_MethodName: Menu
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Menu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &105922425
@@ -852,9 +852,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: LevelMenuManager, Assembly-CSharp
-        m_MethodName: RetryLevel
+      - m_Target: {fileID: 939828138}
+        m_TargetAssemblyTypeName: MenuGameOver, Assembly-CSharp
+        m_MethodName: Reiniciar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3398,9 +3398,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: LevelMenuManager, Assembly-CSharp
-        m_MethodName: RetryLevel
+      - m_Target: {fileID: 939828138}
+        m_TargetAssemblyTypeName: MenuGameOver, Assembly-CSharp
+        m_MethodName: Reiniciar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4894,7 +4894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47b384abb86174341895755b7357835f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelMenuManager: {fileID: 0}
+  levelMenuManager: {fileID: 939828135}
   playerCamera: {fileID: 2094170991}
   timerText: {fileID: 0}
   timeRemaining: 0
@@ -5567,7 +5567,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 939828135}
         m_TargetAssemblyTypeName: LevelMenuManager, Assembly-CSharp
         m_MethodName: NextLevel
         m_Mode: 1
@@ -6559,6 +6559,8 @@ GameObject:
   - component: {fileID: 939828134}
   - component: {fileID: 939828135}
   - component: {fileID: 939828136}
+  - component: {fileID: 939828138}
+  - component: {fileID: 939828137}
   m_Layer: 0
   m_Name: Menus
   m_TagString: Untagged
@@ -6595,8 +6597,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerObject: {fileID: 780688548}
   playerStartPosition: {fileID: 1854771117}
-  levelCompletedMenu: {fileID: 0}
-  levelFailedMenu: {fileID: 0}
+  levelCompletedMenu: {fileID: 401772753}
+  levelFailedMenu: {fileID: 571419245}
   playerTime: {fileID: 780688552}
   killplayer: {fileID: 1572304384}
   levelCompleteTimeText: {fileID: 0}
@@ -6614,10 +6616,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelCompleteTimeText: {fileID: 0}
   playerTime: {fileID: 780688552}
-  levelCompletedMenu: {fileID: 0}
-  levelFailedMenu: {fileID: 0}
-  player: {fileID: 0}
-  playerController: {fileID: 0}
+  levelCompletedMenu: {fileID: 401772753}
+  levelFailedMenu: {fileID: 571419245}
+  player: {fileID: 780688548}
+  playerController: {fileID: 780688548}
+--- !u!114 &939828137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939828132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8938efd6da8141647aa6cd5146cfa223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetSceneName: Menu
+  panelToDisable: {fileID: 0}
+  panelToEnable: {fileID: 0}
+--- !u!114 &939828138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939828132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 968e3fe5415544947bb24bdfebb12130, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &941409937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14540,9 +14569,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: LevelMenuManager, Assembly-CSharp
-        m_MethodName: NextLevel
+      - m_Target: {fileID: 939828137}
+        m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
+        m_MethodName: ChangeScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -2626,7 +2626,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1520326642}
         m_TargetAssemblyTypeName: LevelMenuManager, Assembly-CSharp
         m_MethodName: NextLevel
         m_Mode: 1
@@ -3236,7 +3236,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1520326642}
         m_TargetAssemblyTypeName: LevelMenuManager, Assembly-CSharp
         m_MethodName: RetryLevel
         m_Mode: 1
@@ -3938,8 +3938,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.34632775, y: 0.44900003}
   m_AnchorMax: {x: 0.65683615, y: 0.5161054}
-  m_AnchoredPosition: {x: -4.1101074, y: 0.5}
-  m_SizeDelta: {x: -201.651, y: -19.1917}
+  m_AnchoredPosition: {x: -0.48306274, y: 0.15550041}
+  m_SizeDelta: {x: -205.04, y: -26.4869}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &710813908
 MonoBehaviour:
@@ -3985,9 +3985,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: LevelMenuManager, Assembly-CSharp
-        m_MethodName: RetryLevel
+      - m_Target: {fileID: 1520326645}
+        m_TargetAssemblyTypeName: MenuGameOver, Assembly-CSharp
+        m_MethodName: Reiniciar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6291,7 +6291,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20.6
+  m_fontSize: 18
   m_fontSizeBase: 21
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -8397,6 +8397,8 @@ GameObject:
   - component: {fileID: 1520326644}
   - component: {fileID: 1520326642}
   - component: {fileID: 1520326643}
+  - component: {fileID: 1520326645}
+  - component: {fileID: 1520326647}
   m_Layer: 0
   m_Name: Menus
   m_TagString: Untagged
@@ -8418,8 +8420,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerObject: {fileID: 854714161}
   playerStartPosition: {fileID: 1505012207}
-  levelCompletedMenu: {fileID: 0}
-  levelFailedMenu: {fileID: 0}
+  levelCompletedMenu: {fileID: 1590478818}
+  levelFailedMenu: {fileID: 627166599}
   playerTime: {fileID: 854714162}
   killplayer: {fileID: 801355106}
   levelCompleteTimeText: {fileID: 0}
@@ -8437,10 +8439,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelCompleteTimeText: {fileID: 0}
   playerTime: {fileID: 854714162}
-  levelCompletedMenu: {fileID: 0}
-  levelFailedMenu: {fileID: 0}
-  player: {fileID: 0}
-  playerController: {fileID: 0}
+  levelCompletedMenu: {fileID: 1590478818}
+  levelFailedMenu: {fileID: 627166599}
+  player: {fileID: 854714161}
+  playerController: {fileID: 854714161}
 --- !u!4 &1520326644
 Transform:
   m_ObjectHideFlags: 0
@@ -8456,6 +8458,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 182.366, z: 0}
+--- !u!114 &1520326645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520326641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 968e3fe5415544947bb24bdfebb12130, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1520326647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520326641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8938efd6da8141647aa6cd5146cfa223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetSceneName: Menu
+  panelToDisable: {fileID: 0}
+  panelToEnable: {fileID: 0}
 --- !u!1 &1522603648 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 08b310546c890cb4ca7aa58cfd3c18ec, type: 3}
@@ -9135,16 +9164,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: LevelMenuManager, Assembly-CSharp
-        m_MethodName: BackToMainMenu
-        m_Mode: 1
+      - m_Target: {fileID: 1520326645}
+        m_TargetAssemblyTypeName: MenuGameOver, Assembly-CSharp
+        m_MethodName: Menu
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Menu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1614731329
@@ -9365,8 +9394,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 4.5, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -14.6908, y: 1.2278}
+  m_SizeDelta: {x: -38.3817, y: -2.4556}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1648748942
 MonoBehaviour:
@@ -9415,14 +9444,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18.5
+  m_fontSize: 18
   m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -10021,7 +10050,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 21.75
+  m_fontSize: 18
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -10883,16 +10912,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: LevelMenuManager, Assembly-CSharp
-        m_MethodName: BackToMainMenu
-        m_Mode: 1
+      - m_Target: {fileID: 1520326645}
+        m_TargetAssemblyTypeName: MenuGameOver, Assembly-CSharp
+        m_MethodName: Menu
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Menu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1915178651
@@ -11214,8 +11243,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: LevelMenuManager, Assembly-CSharp
-        m_MethodName: NextLevel
+        m_TargetAssemblyTypeName: SceneSwitcher, Assembly-CSharp
+        m_MethodName: ChangeScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
