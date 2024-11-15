@@ -1483,7 +1483,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 27.8
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1547,6 +1547,7 @@ GameObject:
   - component: {fileID: 367810104}
   - component: {fileID: 367810103}
   - component: {fileID: 367810108}
+  - component: {fileID: 367810109}
   m_Layer: 0
   m_Name: Ocean
   m_TagString: Untagged
@@ -1674,6 +1675,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel1: {fileID: 819435494}
   panel2: {fileID: 1387686576}
+--- !u!114 &367810109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367810102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8938efd6da8141647aa6cd5146cfa223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetSceneName: 
+  panelToDisable: {fileID: 819435494}
+  panelToEnable: {fileID: 1387686576}
 --- !u!1 &560530590
 GameObject:
   m_ObjectHideFlags: 0
@@ -3352,7 +3368,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 27.55
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4449,7 +4465,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 29
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
